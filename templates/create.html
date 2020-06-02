@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% if user.is_authenticated %}
+<form action="" method="post" enctype="multipart/form-data">
+    <h2>投稿</h2>
+    {{ form.as_p }}
+
+    {{ formset.management_form }}
+    <div id="file-area">
+        {% for file_form in formset %}
+            {{ file_form.as_p }}
+            <hr>
+        {% endfor %}
+    </div>
+
+    {% csrf_token %}
+    <button type="submit" class="btn btn-primary">送信</button>
+</form>
+
+{% else %}
+ログインしてください
+{% endif %}
+{% endblock content %}

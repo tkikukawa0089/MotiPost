@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="masthead mb-auto">
+    <div class="inner">
+      <h3 class="masthead-brand">MotiPost</h3>
+      <nav class="nav nav-masthead justify-content-center">
+      </nav>
+    </div>
+  </header>　
+  <div style="text-align: center">
+  <main role="main" class="inner cover">
+      <nav class="nav nav-masthead justify-content-center">
+        <h1 class="cover-heading">このアプリは社内の方に対し、やる気やモチベーションをアピールするSNSアプリです。</h1>
+        <p class="lead">他部署の人達に自部署のやる気をアピールしたい、</p>
+        <p class="lead">自分の部署の成果や取り組みを展開したい、</p>
+        <p class="lead">このアプリは社内に活気をもたらし、会社を元気にするアプリです。</p>
+        　<div style="text-align: center">
+  </main>
+
+<footer class="mastfoot mt-auto">
+    <div class="inner">
+      <a href="{% url 'signup' %}" class="btn btn-lg btn-primary">新規登録</a>
+      <a href="{% url 'login' %}" class="btn btn-lg btn-secondary">ログイン</a>
+    </div>
+</footer>
+{% endblock content %}
