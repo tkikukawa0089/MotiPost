@@ -1,3 +1,22 @@
+# Requirement
+ 
+python Python 3.6.5
+django 3.0.6
+gunicorn (version 20.0.4)
+
+#Application function list
+・記事投稿機能
+・いいね機能
+・起動機能
+・画像投稿機能
+・ユーザー登録機能
+・ログイン機能
+
+※インフラはAWS(ubuntu)
+Nginx,gunicornでDjangoのアプリを構成
+仮想環境はvirtualenvを利用
+DBはPostgreSQLを利用
+
 # About the contents of the application
 
 MotiListは社内などの特定のグループ内で、
